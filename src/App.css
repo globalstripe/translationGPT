@@ -4,22 +4,26 @@
 }
 
 body {
+  -webkit-font-smoothing: antialiased;
   margin: 0;
   background: #b9bbb7;
+  background-image: url("5e7338dafa6498340e5a210f_Hero_About_Ostmodern.jpg");
+  background-color:#b9bbb7;
 }
 
 h1 {
-  margin-top: 0;
+  margin-top: 20px;
   color: #1c1d1e;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
   border-radius: 25px;
   max-width: 1200px;
-  height: 720px;
-  margin: 32px auto;
+  height: 800px;
+  margin: 82px auto;
   background: #e4dada;
+  
   padding: 16px 32px;
   box-shadow: 0 4px 40px -8px rgba(0, 0, 0, 0.2);
 }
@@ -33,11 +37,13 @@ button {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
 }
 
 .container form label {
-  background: #a2d2ff;
+  background: #73afe7;
   color: #023047;
+  
   height: 40px;
   width: 100px;
   display: flex;
@@ -47,7 +53,7 @@ button {
   cursor: pointer;
 }
 
-.container form input[type="radio"]:checked + label {
+.container form input[type="radio"]:checked+label {
   background: #023047;
   color: #fff;
   font-weight: bold;
@@ -60,6 +66,7 @@ button {
 
 .container form input[type="radio"] {
   display: none;
+
 }
 
 .container textarea {
@@ -76,20 +83,31 @@ button {
   padding: 8px;
   font-size: 20px;
   border: none;
-  background: #e63946;
+  background: #FF3800;
   color: #fff;
   cursor: pointer;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
 .translation {
   border-radius: 25px;
-  padding: 12px 32px;
+  padding: 16px;
   background: #edf2f4;
   margin-top: 20px;
   font-size: 20px;
   line-height: 1.7;
-  height: 240px;
-  overflow-y: scroll;
+  height: 260px;
+  overflow-y: auto;
+  scrollbar-color: #438eac #245c72;
   position: relative;
 }
 
@@ -97,9 +115,10 @@ button {
   position: absolute;
   width: 20px;
   top: 12px;
-  right: 12px;
+  right: 30px;
   opacity: 0.7;
   cursor: pointer;
+  
 }
 
 .notification {
@@ -119,5 +138,5 @@ button {
 }
 
 .error {
-  color: red;
+  color: #FF3800;
 }

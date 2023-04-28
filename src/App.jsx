@@ -57,7 +57,7 @@ const App = () => {
     }
     setIsLoading(true);
     displayChatNotification()
-    //translate();
+    translate();
   };
 
   const handleCopy = () => {
@@ -83,6 +83,12 @@ const App = () => {
 
 
   return (
+    
+    <>
+    <head>
+
+    </head>
+
     <div className="container">
       <h1>ChatGPT Translation - ApiKey {APIKEY}</h1>
 
@@ -149,6 +155,7 @@ const App = () => {
       </div>
 
     </div>
+    </>
   );
 };
 
